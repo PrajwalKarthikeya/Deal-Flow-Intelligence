@@ -1,0 +1,5 @@
+{
+  "registries": {
+    "@obsidian": "https://www.obsidianui.dev/r/{name}.json"
+  }
+}

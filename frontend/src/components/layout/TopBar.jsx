@@ -25,7 +25,7 @@ export default function TopBar() {
           <input
             type="text"
             placeholder="Search deals, companies, financial filings (⌘K)..."
-            className="w-full bg-white/[0.03] border border-white/10 rounded-xl pl-10 pr-12 py-2.5 text-sm text-gray-200 placeholder-gray-500 focus:outline-none focus:border-sky-500/50 focus:bg-white/[0.06] focus:ring-4 focus:ring-sky-500/10 transition-all shadow-inner"
+            className="w-full bg-white/[0.03] border border-white/10 rounded-xl pl-10 pr-12 py-2.5 text-sm text-gray-200 placeholder-gray-500 focus:outline-none focus:border-amber-500/50 focus:bg-white/[0.06] focus:ring-4 focus:ring-amber-500/10 transition-all shadow-inner"
           />
           <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
             <kbd className="px-1.5 py-0.5 text-[10px] font-mono text-gray-400 bg-white/[0.05] border border-white/10 rounded">⌘K</kbd>
@@ -40,16 +40,16 @@ export default function TopBar() {
           <span className="text-gray-400 font-medium">API Gateway:</span>
           <span
             className={`font-semibold capitalize flex items-center gap-1.5 ${
-              backendStatus === 'healthy' ? 'text-emerald-400' : 'text-amber-400'
+              backendStatus === 'healthy' ? 'text-emerald-500' : 'text-amber-500'
             }`}
           >
-            <span className={`w-1.5 h-1.5 rounded-full ${backendStatus === 'healthy' ? 'bg-emerald-400 animate-pulse' : 'bg-amber-400'}`}></span>
+            <span className={`w-1.5 h-1.5 rounded-full ${backendStatus === 'healthy' ? 'bg-emerald-500 animate-pulse' : 'bg-amber-500'}`}></span>
             <span>{backendStatus}</span>
           </span>
         </div>
 
         {/* User profile avatar */}
-        <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-sky-500 to-indigo-600 flex items-center justify-center text-white font-bold text-sm shadow-md border border-sky-400/30">
+        <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-amber-500 to-amber-700 flex items-center justify-center text-white font-bold text-sm shadow-md border border-amber-400/30">
           PA
         </div>
       </div>

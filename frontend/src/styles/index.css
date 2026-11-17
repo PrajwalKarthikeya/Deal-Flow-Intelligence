@@ -2,16 +2,16 @@
 
 @layer base {
   :root {
-    --background: 7 8 10;
-    --foreground: 244 245 247;
-    --card: 13 15 20;
-    --card-foreground: 244 245 247;
-    --primary: 56 189 248;
-    --primary-foreground: 7 8 10;
-    --muted: 22 25 34;
-    --muted-foreground: 148 163 184;
-    --border: 30 36 51;
-    --accent: 129 140 248;
+    --background: 9 9 9;
+    --foreground: 229 231 235;
+    --card: 20 20 20;
+    --card-foreground: 229 231 235;
+    --primary: 212 175 55;
+    --primary-foreground: 9 9 9;
+    --muted: 25 25 25;
+    --muted-foreground: 163 163 163;
+    --border: 40 40 40;
+    --accent: 184 134 11;
   }
 
   body {
@@ -32,21 +32,21 @@
 }
 
 .glass-panel-glow {
-  background: rgba(13, 15, 20, 0.85);
+  background: rgba(20, 20, 20, 0.85);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(56, 189, 248, 0.2);
-  box-shadow: 0 0 40px -10px rgba(56, 189, 248, 0.15);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  box-shadow: 0 0 40px -10px rgba(212, 175, 55, 0.2);
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #f8fafc 0%, #94a3b8 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #a3a3a3 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.text-gradient-cyan {
-  background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+.text-gradient-gold {
+  background: linear-gradient(135deg, #d4af37 0%, #b8860b 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -58,14 +58,14 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #07080a;
+  background: #090909;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1e2433;
+  background: #404040;
   border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #334155;
+  background: #525252;
 }

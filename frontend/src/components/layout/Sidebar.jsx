@@ -1,5 +1,6 @@
-import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Button } from '../ui/Button';
+import { Badge } from '../ui/Badge';
+import { Card } from '../ui/Card';
 
 export default function Sidebar() {
   const location = useLocation();
@@ -53,7 +54,7 @@ export default function Sidebar() {
       </nav>
 
       {/* System Status Footer */}
-      <div className="p-4 border-t border-white/[0.06] m-4 rounded-2xl glass-panel bg-white/[0.02]">
+      <Card className="m-4 rounded-2xl bg-white/[0.02]">
         <div className="flex items-center justify-between mb-1.5">
           <span className="text-xs font-semibold text-gray-300">Terminal Node</span>
           <span className="flex h-2 w-2 relative">
@@ -62,7 +63,7 @@ export default function Sidebar() {
           </span>
         </div>
         <p className="text-[11px] text-gray-400 font-mono">pgvector • Active</p>
-      </div>
+      </Card>
     </aside>
   );
 }

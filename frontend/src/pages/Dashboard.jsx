@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import ReactECharts from 'echarts-for-react';
 import { ANIMATION_VARIANTS, hoverEffect } from '../lib/motion';
+import { CinematicBackground } from '../components/three/CinematicBackground';
 
 export default function Dashboard() {
   const valuationTrendOption = {
@@ -94,8 +95,9 @@ export default function Dashboard() {
       variants={ANIMATION_VARIANTS.staggerContainer}
       initial="hidden"
       animate="visible"
-      className="space-y-8 pb-12"
+      className="space-y-8 pb-12 relative"
     >
+      <CinematicBackground />
       {/* Cinematic Hero Section */}
       <motion.div 
         variants={ANIMATION_VARIANTS.fadeUp}

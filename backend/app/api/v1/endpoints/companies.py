@@ -21,3 +21,4 @@ async def create_company(company_in: CompanyCreate, db: AsyncSession = Depends(g
     await db.commit()
     await db.refresh(new_company)
     return new_company
+# Additional documentation for API endpoints
